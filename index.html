@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel blog</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<header id="home">
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="navbar_brand">Travel blog</a>
+            <div class="navbar-nav">
+               <a href="#home">Home</a>
+               <a href="#design">Travel</a>
+               <a href="#stories">Stories</a>
+               <a href="#about">About</a>
+            </div>
+        </div>
+    </nav>
+    <div class="banner">
+        <div class="container">
+            <h1 class="banner-title">
+                <span>Travel</span> Tales
+            </h1>
+            <p>Where journey become stories</p>
+            <form id="searchForm">
+                <input type="text" id="searchInput" class="search-input" placeholder="Find the place...">
+                <button type="submit" class="search-button">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+             </form>
+        </div>
+    </div>
+</header>
+
+<section class="design" id="design">
+    <div class="container">
+        <div class="title">
+            <h2>Travel destinations</h2>
+            <p>Must visit places as a student in india</p>
+        </div>
+
+        <div class="design-content">
+            <div class="design-item" data-name="munnar">
+                <div class="design-img">
+                    <img src="munnar11.jpg" alt="Travel">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                     </span>
+                    <span>Greenary</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Munnar</a>
+                </div>
+            </div>
+
+            <div class="design-item" data-name="hampi">
+                <div class="design-img">
+                    <img src="hampi1.png" alt="Travel">
+                    <span class="like-btn" onclick="likeImage(this)">
+                        <i class="far fa-heart"></i>
+                   </span>
+                    <span>Heritage</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Hampi</a>
+                </div>
+            </div>
+
+            <div class="design-item" data-name="goa">
+                <div class="design-img">
+                    <img src="goa11.jpg" alt="Travel">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <span>Sunshine</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Goa</a>
+                </div>
+            </div>
+
+            <div class="design-item" data-name="manali">
+                <div class="design-img">
+                    <img src="manali11.jpg" alt="Travel">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <span>Haven</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Manali</a>
+                </div>
+            </div>
+
+            <div class="design-item" data-name="pondicherry">
+                <div class="design-img">
+                 <img src="pondicherry11.jpg" alt="Travel">
+                 <span class="like-btn" onclick="likeImage(this)">
+                   <i class="far fa-heart"></i>
+                </span>
+                    <span>Seaside</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Pondicherry</a>
+                </div>
+            </div>
+
+            <div class="design-item" data-name="jaipur">
+                <div class="design-img">
+                    <img src="jaipur11.jpg" alt="Travel">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                    <span>Palaces</span>
+                </div>
+                <div class="design-title">
+                    <a href="#">Jaipur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>  
+<section class="stories" id="stories">
+    <div class="container">
+        <div class="title">
+           <h2>Latest Travel Stories</h2> 
+           <p>These are the most travelled places by students in the past two years</p>
+        </div>
+        <div class="blog-content">
+           <div class="blog-item" data-name="ayodhya">
+                <div class="blog-img">
+                    <img src="Ayodhya22.jpg" alt="ayodhya">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+                    <span>
+                        Ayodhya • Spiritual City
+                    </span>
+                    <h2>
+                       A city of heritage and spirituality
+                    </h2>
+                     <p>Ayodhya enchants visitors with sacred temples, timeless traditions and spiritual atmosphere.</p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Ram Janmabhoomi (Ram Mandir)</li>
+    <li>Hanuman Garhi</li>
+    <li>Kanak Bhawan</li>
+    <li>Ram Ki Paidi (Saryu Ghat)</li>
+    <li>Ram Katha Park</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Hotels and guest houses near Ram Mandir area or Ayodhya Dham
+    Railway Station are convenient and budget-friendly.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Local vegetarian restaurants near Kanak Bhawan and Saryu Ghat
+    serve simple and hygienic meals.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Ram Mandir → Hanuman Garhi → Kanak Bhawan → Evening aarti<br>
+    <b>Day 2:</b> Ram Katha Park → Local market
+  </p>
+</div>
+
+                </div>
+            </div>
+             <div class="blog-item" data-name="jammu-kashmir">
+                <div class="blog-img">
+                    <img src="jammu22.jpg" alt="jammuandkashmir">
+                    <span class="like-btn" onclick="likeImage(this)">
+                       <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+                    <span>
+                        Jammu & Kashmir • Mountain Destination
+                    </span>
+                    <h2>Mountains, valleys & views</h2>
+                     <p>Jammu and Kashmir enchants visitors with majestic mountains, serene valleys and rich culture.
+                    </p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Srinagar – Dal Lake & Shikara Ride</li>
+    <li>Gulmarg – Snow views & Gondola Ride</li>
+    <li>Pahalgam – Betaab Valley & Lidder River</li>
+    <li>Sonamarg – Glaciers & Meadow views</li>
+    <li>Mughal Gardens – Nishat & Shalimar Bagh</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Budget hotels and houseboats in Srinagar are ideal for students.
+    Gulmarg and Pahalgam also offer affordable guest houses.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Try local Kashmiri cuisine like Rogan Josh, Dum Aloo, and Kahwa.
+    Small cafés and local dhabas offer tasty food at reasonable prices.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Srinagar → Dal Lake → Mughal Gardens<br>
+    <b>Day 2:</b> Gulmarg → Gondola Ride → Snow activities<br>
+    <b>Day 3:</b> Pahalgam → Betaab Valley → River walk<br>
+    <b>Day 4:</b> Sonamarg → Glacier views → Return
+  </p>
+</div>
+
+                </div>
+            </div>
+             <div class="blog-item" data-name="pondicherry">
+                <div class="blog-img">
+                    <img src="pondicherry22.jpg" alt="pondicherry">
+                    <span class="like-btn" onclick="likeImage(this)">
+                     <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+                    <span>
+                        Pondicherry • Coastal Town
+                    </span>
+                    <h2>Coastal beauty with French vibes</h2>
+                     <p>Pondicherry enchants visitors with serene beaches, colonial charm and vibrant spiritual culture heritage.</p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Promenade Beach (Rock Beach)</li>
+    <li>Paradise Beach</li>
+    <li>Aurobindo Ashram</li>
+    <li>Auroville & Matrimandir</li>
+    <li>French Quarter (White Town)</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Budget hotels and hostels in White Town and near Promenade Beach
+    are convenient for students and solo travelers.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Cafés in White Town serve affordable French and South Indian food.
+    Beachside eateries offer simple and tasty meals.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Promenade Beach → French Quarter → Café hopping<br>
+    <b>Day 2:</b> Aurobindo Ashram → Auroville → Paradise Beach
+  </p>
+</div>
+
+                </div>
+            </div>
+             <div class="blog-item" data-name="goa">
+                <div class="blog-img">
+                    <img src="goa22.jpg" alt="goa">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+                    <span>
+                        Goa • Beach Destination
+                    </span>
+                    <h2>Sun, sand, and lively culture</h2>
+                    <p>Goa charms travelers with golden beaches, vibrant nightlife, scenic coastlines and relaxed culture.</p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Promenade Beach (Rock Beach)</li>
+    <li>Paradise Beach</li>
+    <li>Aurobindo Ashram</li>
+    <li>Auroville (Matrimandir Viewpoint)</li>
+    <li>French Quarter (White Town)</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Budget hotels and guest houses in White Town and near
+    Promenade Beach are affordable and convenient for students.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Cafés and local restaurants in White Town serve simple,
+    hygienic food at reasonable prices.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Promenade Beach → French Quarter → Café visit<br>
+    <b>Day 2:</b> Aurobindo Ashram → Auroville → Paradise Beach
+  </p>
+</div>
+
+                </div>
+            </div>
+             <div class="blog-item" data-name="manali">
+                <div class="blog-img">
+                    <img src="manali22.jpg" alt="manali">
+                    <span class="like-btn" onclick="likeImage(this)">
+                       <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+                    <span>
+                        Manali • Hill Station
+
+                    </span>
+                    <h2>Adventure and serene landscapes</h2>
+                     <p>Manali enchants visitors with snow-capped mountains, lush valleys and refreshing climate.</p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Hadimba Devi Temple</li>
+    <li>Old Manali</li>
+    <li>Solang Valley</li>
+    <li>Vashisht Hot Springs</li>
+    <li>Manali Mall Road</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Budget hotels and hostels in Old Manali and near Mall Road
+    are affordable and convenient for students.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Local cafés in Old Manali and restaurants on Mall Road
+    serve tasty food at reasonable prices.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Hadimba Temple → Old Manali → Mall Road<br>
+    <b>Day 2:</b> Solang Valley → Vashisht Hot Springs
+  </p>
+</div>
+
+                </div>
+            </div>
+             <div class="blog-item" data-name="jaipur">
+                <div class="blog-img">
+                    <img src="jaipur22.jpg" alt="jaipur">
+                    <span class="like-btn" onclick="likeImage(this)">
+                      <i class="far fa-heart"></i>
+                    </span>
+                </div>
+                <div class="blog-text">
+               <span>
+                Jaipur • Heritage City
+               </span>
+                    <h2>Royal forts and colorful traditions</h2>
+                     <p>Jaipur dazzles travelers with royal palaces, vibrant bazaars, historic forts and timeless cultural charm.</p>
+                     <!--<a href="javascript:void(0)" class="read-more" onclick="toggleReadMore(this)">
+                        Read more
+                    </a>-->
+                    <a href="javascript:void(0)" class="view-itinerary" onclick="toggleItinerary(this)">
+  View itinerary →
+</a>
+
+<div class="itinerary">
+  <p class="itinerary-heading">Places to Visit:</p>
+  <ul>
+    <li>Amer Fort</li>
+    <li>Hawa Mahal</li>
+    <li>City Palace</li>
+    <li>Jantar Mantar</li>
+    <li>Nahargarh Fort</li>
+  </ul>
+
+  <p class="itinerary-heading">Where to Stay:</p>
+  <p>
+    Budget hotels and hostels near MI Road and Pink City
+    are affordable and well connected for students.
+  </p>
+
+  <p class="itinerary-heading">Where to Eat:</p>
+  <p>
+    Local restaurants in the Pink City serve traditional
+    Rajasthani food at reasonable prices.
+  </p>
+
+  <p class="itinerary-heading">Simple Plan:</p>
+  <p>
+    <b>Day 1:</b> Amer Fort → City Palace → Hawa Mahal<br>
+    <b>Day 2:</b> Jantar Mantar → Local markets → Nahargarh Fort
+  </p>
+</div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+    <div class="container">
+        <div class="about-content">
+            <div>
+                <img src="foot.jpg" alt="">
+
+            </div>
+            <div class="about-text">
+                <div class="title">
+                    <h2>Harika</h2>
+                    <p>Stories beyond maps</p>
+                </div>
+                <p>Travel Tales is a travel blog that brings together stories and highlights
+                 from some of the most loved destinations across India. From peaceful hill
+                 stations to vibrant coastal cities, the blog captures the beauty, culture,
+                and atmosphere of each place.
+                </p>
+                <p>
+                    The blog focuses on destinations that are popular among travelers and 
+                    students,offering a glimpse into scenic landscapes, local traditions, 
+                    and memorable experiences. It is created to inspire exploration and
+                    appreciation of India’s diverse travel destinations.
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+<footer>
+  <div class="social-links">
+    <a href="#"><i class="fab fa-facebook-f"></i></a>
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-twitter"></i></a>
+    <a href="#"><i class="fab fa-pinterest"></i></a>
+  </div>
+
+  <p>© 2025 Harika | All Rights Reserved</p>
+</footer>
+
+<script>
+function likeImage(btn) {
+    const icon = btn.querySelector("i");
+
+    if (icon.classList.contains("far")) {
+        icon.classList.remove("far");
+        icon.classList.add("fas");
+        icon.style.color = "red";
+    } else {
+        icon.classList.remove("fas");
+        icon.classList.add("far");
+        icon.style.color = "";
+    }
+}
+</script>
+<script>
+const searchForm = document.getElementById("searchForm");
+const searchInput = document.getElementById("searchInput");
+
+searchForm.addEventListener("submit", function (e) {
+    e.preventDefault(); 
+    const value = searchInput.value.toLowerCase().trim();
+    if (!value) return;
+    const allItems = document.querySelectorAll(".design-item, .blog-item");
+    let found = false;
+    allItems.forEach(item => {
+        const name = item.getAttribute("data-name");
+        item.classList.remove("highlight");
+        if (!found && name.includes(value)) {
+            found = true;
+            item.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            });
+            item.classList.add("highlight");
+        }
+    });
+    if (!found) {
+        alert("Place not found 😕");
+    }
+});
+</script>
+<script>
+function toggleReadMore(btn) {
+    const para = btn.previousElementSibling;
+    para.classList.toggle("show");
+
+    if (btn.innerText === "Read more") {
+        btn.innerText = "Read less";
+    } else {
+        btn.innerText = "Read more";
+    }
+}
+</script>
+<script>
+function toggleItinerary(link) {
+  const itinerary = link.nextElementSibling;
+  itinerary.style.display =
+    itinerary.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</body>
+</html>
