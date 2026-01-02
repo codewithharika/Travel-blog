@@ -18,7 +18,7 @@ https://codewithharika.github.io/Travel-blog/
 ================
 * HTML
 * CSS
-* Jvascript
+* Javascript
   
 📁 Project Structure:
 ================
